@@ -1,0 +1,390 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    min-height:100vh;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.login-card{
+    background:white;
+    width:100%;
+    max-width:500px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.15);
+}
+
+.login-card h1{
+    text-align:center;
+    color:#1e40af;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    text-align:center;
+    margin-bottom:25px;
+    color:#666;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.login-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login-card button:hover{
+    background:#1d4ed8;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+#welcome{
+    font-size:15px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    background:white;
+    padding:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+    padding:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#1e40af;
+    margin-bottom:20px;
+}
+
+/* =========================
+   ACCORDION MATERI
+========================= */
+
+.accordion{
+    margin-bottom:15px;
+}
+
+.accordion-btn{
+    width:100%;
+    border:none;
+    padding:15px;
+    text-align:left;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.accordion-btn:hover{
+    background:#1d4ed8;
+}
+
+.accordion-content{
+    display:none;
+    padding:15px;
+    background:#eef4ff;
+    border-radius:10px;
+    margin-top:5px;
+    line-height:1.8;
+}
+
+/* =========================
+   KALKULATOR
+========================= */
+
+select,
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+button{
+    transition:0.3s;
+}
+
+#kalkulator button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    cursor:pointer;
+}
+
+#kalkulator button:hover{
+    background:#15803d;
+}
+
+#hasil-limit{
+    margin-top:20px;
+    padding:20px;
+    background:#eef4ff;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    line-height:1.8;
+}
+
+/* =========================
+   LATIHAN SOAL
+========================= */
+
+#progress{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.progress-bar{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.progress-fill{
+    height:100%;
+    width:0%;
+    background:#2563eb;
+}
+
+.soal-box{
+    background:#fafafa;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #ddd;
+}
+
+.soal-box h3{
+    margin-bottom:15px;
+}
+
+.soal-box input{
+    margin-top:10px;
+}
+
+.btn-jawab{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.btn-jawab:hover{
+    background:#1d4ed8;
+}
+
+#hasil-jawaban{
+    margin-top:15px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.benar{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.salah{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+.pembahasan{
+    margin-top:15px;
+    background:#fff7ed;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* =========================
+   PROFIL
+========================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+table td:first-child{
+    font-weight:bold;
+    width:220px;
+}
+
+/* =========================
+   REFERENSI
+========================= */
+
+ol li{
+    margin-bottom:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:30px;
+    background:#1e40af;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* =========================
+   RUMUS
+========================= */
+
+.rumus{
+    background:#f8fafc;
+    border-left:4px solid #2563eb;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    overflow:auto;
+}
+
+.contoh{
+    background:#fffbeb;
+    padding:15px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:22px;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav button{
+        width:100%;
+    }
+
+    .page{
+        padding:15px;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    table td{
+        display:block;
+        width:100%;
+    }
+
+    table td:first-child{
+        background:#eef4ff;
+    }
+}
